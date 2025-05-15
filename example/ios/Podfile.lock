@@ -227,7 +227,7 @@ PODS:
   - React-jsinspector (0.69.9)
   - React-logger (0.69.9):
     - glog
-  - react-native-gcast (4.8.3):
+  - react-native-gcast (4.9.0):
     - google-cast-sdk
     - PromisesObjC
     - React

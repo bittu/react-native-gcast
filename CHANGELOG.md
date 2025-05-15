@@ -1,9 +1,64 @@
-## [4.8.3](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.8.2...4.8.3) (2024-09-11)
+# 4.9.0 (2025-05-15)
+
+
+### Bug Fixes
+
+* [#233](https://github.com/bittu/react-native-gcast/issues/233) Adding items to queue ([7af4baa](https://github.com/bittu/react-native-gcast/commit/7af4baa7793a583378d6ca29eecd5667c197cd25))
+* avoid ignoring error message in onSessionStartFailed callback ([785a715](https://github.com/bittu/react-native-gcast/commit/785a7153c98baaebdfb4c0c84571682f20f69dda))
+* cast state listener; close [#243](https://github.com/bittu/react-native-gcast/issues/243) ([ccd7ec8](https://github.com/bittu/react-native-gcast/commit/ccd7ec8a53f91079c396d3b020455d5aa5f156b9))
+* check for invalid default values ([706faa3](https://github.com/bittu/react-native-gcast/commit/706faa3b2e37e0d297f181778de76708b7cbd104))
+* check for null values; closes [#232](https://github.com/bittu/react-native-gcast/issues/232) ([dd81ada](https://github.com/bittu/react-native-gcast/commit/dd81ada9f3c5237046d74160f26fb65098f9e845))
+* check for nulls [close [#454](https://github.com/bittu/react-native-gcast/issues/454)] ([369e48d](https://github.com/bittu/react-native-gcast/commit/369e48d1e4fb0a178736c33aea9b8e9ae4a7453c))
+* client already removed; fixes [#251](https://github.com/bittu/react-native-gcast/issues/251) ([e916eaa](https://github.com/bittu/react-native-gcast/commit/e916eaabaad00c76012b579f0c1d5e2ad1419dee))
+* Crash on iOS when using SessionManager events and reloading ([#285](https://github.com/bittu/react-native-gcast/issues/285)) ([ec741b6](https://github.com/bittu/react-native-gcast/commit/ec741b610a67a5cc4774a114099265894a354569))
+* crash reading notification options [#447](https://github.com/bittu/react-native-gcast/issues/447) ([41cca84](https://github.com/bittu/react-native-gcast/commit/41cca84169932b17f22274ab2ce8cfd6514e20ca))
+* example project setup [close [#504](https://github.com/bittu/react-native-gcast/issues/504)] ([c226ace](https://github.com/bittu/react-native-gcast/commit/c226ace37a7f089cafdc6a1affecfc6ff8b2e338))
+* **expo): use internal expo plugin & docs(expo:** updated docs & chore: fixed testsuite and linting ([#522](https://github.com/bittu/react-native-gcast/issues/522)) ([316fbd6](https://github.com/bittu/react-native-gcast/commit/316fbd61e536863377088ee6e440377d1bb9872a))
+* hls format TS_AAC ([69d49e3](https://github.com/bittu/react-native-gcast/commit/69d49e30f7bc40130c024ad60119c8022c4843dd))
+* invalidate compat with RN <=63 [close [#339](https://github.com/bittu/react-native-gcast/issues/339)] ([23b91b8](https://github.com/bittu/react-native-gcast/commit/23b91b8577ae481e55680f272b79838bd21ed764))
+* **ios:** added null fallback to adBreakClipInfo dictionary ([6fe9d87](https://github.com/bittu/react-native-gcast/commit/6fe9d87a39354212f78d50c47d16e3d83e0d2556))
+* link podspec properly ([d803990](https://github.com/bittu/react-native-gcast/commit/d8039904dd7679509920cea29784ebfbeac08bc7))
+* lint ([d7e3070](https://github.com/bittu/react-native-gcast/commit/d7e307013e855ebb0f971ddd4aa7bcbce5c5a3b5))
+* mediaInfo can be null [close [#327](https://github.com/bittu/react-native-gcast/issues/327)] ([c8b60e8](https://github.com/bittu/react-native-gcast/commit/c8b60e8d93fa5c7d8eeda5e6d8249702c80d29df))
+* missing import ([04cf5df](https://github.com/bittu/react-native-gcast/commit/04cf5df3bc5d16cb0c0ea26dfbef60506d904ccb))
+* npm files selection ([69f0a8a](https://github.com/bittu/react-native-gcast/commit/69f0a8ad614ce5d478137e000d55223042f36b13))
+* play and pause on Android V4 ([#250](https://github.com/bittu/react-native-gcast/issues/250)) ([1c1d27a](https://github.com/bittu/react-native-gcast/commit/1c1d27aeeecb78b6d4259f906cf4c092e5cadb30))
+* podspec location [close [#438](https://github.com/bittu/react-native-gcast/issues/438)] ([a169b59](https://github.com/bittu/react-native-gcast/commit/a169b5978e238bfb5aecad7695837d97b283f9c7))
+* prevent crash when ending session due to missing GMS ([#496](https://github.com/bittu/react-native-gcast/issues/496)) ([882f947](https://github.com/bittu/react-native-gcast/commit/882f947fefe734daca15b8c18ea079254229cb6e))
+* prevent crash when GooglePlay services is missing or running on Android TV ([#367](https://github.com/bittu/react-native-gcast/issues/367)) ([df6d5ed](https://github.com/bittu/react-native-gcast/commit/df6d5ed443fa4fe234ca0f064a4fc7de4c64b31f))
+* prevent crash when no session available [#477](https://github.com/bittu/react-native-gcast/issues/477) ([9901ade](https://github.com/bittu/react-native-gcast/commit/9901adeaedb06525821be03ed968cad808c02af2))
+* removed unused android libs ([7644c9e](https://github.com/bittu/react-native-gcast/commit/7644c9ebbdf2e4db57957a11c1ba504f96865aab))
+* required authors field ([75d6161](https://github.com/bittu/react-native-gcast/commit/75d61613cec22a7729eea54a756b9419cbe84bb8))
+* resolve requests [close [#296](https://github.com/bittu/react-native-gcast/issues/296)] ([2d0f603](https://github.com/bittu/react-native-gcast/commit/2d0f603e24f4f8986e20c383cbd75b878f7db45f))
+* run startDiscovery and stopDiscovery on the iOS main thread ([#340](https://github.com/bittu/react-native-gcast/issues/340)) ([8d13e69](https://github.com/bittu/react-native-gcast/commit/8d13e697182595fbc15c5dde2e205721a75206b8))
+* set active media tracks [#277](https://github.com/bittu/react-native-gcast/issues/277) ([a43a7fd](https://github.com/bittu/react-native-gcast/commit/a43a7fd310c82808c73eaf6ddc1cb0d70c080248))
+* setActiveMediaTracks [close [#280](https://github.com/bittu/react-native-gcast/issues/280)] ([61813f5](https://github.com/bittu/react-native-gcast/commit/61813f501cd4f1f725431aa922ab86b31d5dc6e4))
+* times in seconds [Android] [#244](https://github.com/bittu/react-native-gcast/issues/244) ([64c483b](https://github.com/bittu/react-native-gcast/commit/64c483b06c5e7c7762e4564cd255c9b04c33775c))
+* update missing path, following podspec move ([#439](https://github.com/bittu/react-native-gcast/issues/439)) ([7d2c607](https://github.com/bittu/react-native-gcast/commit/7d2c607a137069a7c06706bdb16080cada8cc335)), closes [#438](https://github.com/bittu/react-native-gcast/issues/438)
+* use relative imports [close [#318](https://github.com/bittu/react-native-gcast/issues/318)] ([62aa3ae](https://github.com/bittu/react-native-gcast/commit/62aa3aefd5f7c842835b9edf288c0b10340f752e))
+* xcodeproj file references [close [#281](https://github.com/bittu/react-native-gcast/issues/281)] ([0daedd8](https://github.com/bittu/react-native-gcast/commit/0daedd80b86bc97abd779d155885d5aac725ad4d))
 
 
 ### Features
 
-* enable expanded controller in Expo [close [#538](https://github.com/react-native-google-cast/react-native-google-cast/issues/538)] ([b385ad1](https://github.com/react-native-google-cast/react-native-google-cast/commit/b385ad11fad0f88dc8f8247912430e1ea1535eb2))
+* add liveSeekableRange object to MediaStatus ([#493](https://github.com/bittu/react-native-gcast/issues/493)) ([1e1e938](https://github.com/bittu/react-native-gcast/commit/1e1e93866ef67ffb14aa2bb48350e22ed16e6371))
+* android notification buttons [#252](https://github.com/bittu/react-native-gcast/issues/252) ([d193613](https://github.com/bittu/react-native-gcast/commit/d193613a5478ee59ee362d500ff7a8a1b321030b))
+* cast channel state and info [close [#449](https://github.com/bittu/react-native-gcast/issues/449)] ([fd00fd1](https://github.com/bittu/react-native-gcast/commit/fd00fd16275c3c538840930c62bc1d3318fea3c0))
+* **client:** media status updates ([e4a0684](https://github.com/bittu/react-native-gcast/commit/e4a0684526adb3004d808d5b0a7d139afd33f72c))
+* custom channels; close [#223](https://github.com/bittu/react-native-gcast/issues/223) [#165](https://github.com/bittu/react-native-gcast/issues/165) ([af8c2cd](https://github.com/bittu/react-native-gcast/commit/af8c2cdd45395dc3b66863099bdc45afb76ad7a6))
+* discovery manager [#221](https://github.com/bittu/react-native-gcast/issues/221) ([3c3be54](https://github.com/bittu/react-native-gcast/commit/3c3be54b1dd79ae8bbee2143abe27894cda01a58))
+* don't hide cast button ([63ee8fa](https://github.com/bittu/react-native-gcast/commit/63ee8faabcfc71dd461a38b41c08d475417a966b))
+* enable expanded controller in Expo [close [#538](https://github.com/bittu/react-native-gcast/issues/538)] ([b385ad1](https://github.com/bittu/react-native-gcast/commit/b385ad11fad0f88dc8f8247912430e1ea1535eb2))
+* end session; close [#241](https://github.com/bittu/react-native-gcast/issues/241) ([3fd56cc](https://github.com/bittu/react-native-gcast/commit/3fd56cc85eb03bd139a49b8d369d22e5f5249de8))
+* expose requestStatus method ([d474f1f](https://github.com/bittu/react-native-gcast/commit/d474f1f8244d581c9d2526faf78b49a719de8515))
+* handle missing play services ([85d722c](https://github.com/bittu/react-native-gcast/commit/85d722c1119a6b4b82fef4b4afc75f4f2b5d8312))
+* hlsSegmentFormat for ios [#278](https://github.com/bittu/react-native-gcast/issues/278) ([332b507](https://github.com/bittu/react-native-gcast/commit/332b5070f0046cc2d8f5f964fa486cea5ef4edee))
+* ignoreBackgrounding for useCastSession ([4644b3e](https://github.com/bittu/react-native-gcast/commit/4644b3ea21f73a3e8150f12cb375a1c3d0499587))
+* implement session setMute and setVolume ([c4e55fb](https://github.com/bittu/react-native-gcast/commit/c4e55fb09269d6ea434d3f98df2ad1f6f2dad683))
+* manage devices and sessions [close [#306](https://github.com/bittu/react-native-gcast/issues/306)] ([35dff67](https://github.com/bittu/react-native-gcast/commit/35dff67d96c562a3ce3102f4823753bc6d3c492c))
+* media events; close [#257](https://github.com/bittu/react-native-gcast/issues/257) ([080a672](https://github.com/bittu/react-native-gcast/commit/080a672db26288d77e5eb18338828bc18cd0d92d))
+* media status event; closes [#237](https://github.com/bittu/react-native-gcast/issues/237) ([6591bf9](https://github.com/bittu/react-native-gcast/commit/6591bf93d897dfee19ab4cee757e6cb574363533))
+* **sdk:** latest SDK updates ([2e61c53](https://github.com/bittu/react-native-gcast/commit/2e61c535b064b6b5ddc4370b886e43e0d5a9950c))
 
 ### Changelog
 
@@ -11,436 +66,63 @@ All notable changes to this project will be documented in this file. Dates are d
 
 Generated by [`auto-changelog`](https://github.com/CookPete/auto-changelog).
 
-#### [4.8.3](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.8.2...4.8.3)
-
-- added namespace for AGP version 7+ [`#536`](https://github.com/react-native-google-cast/react-native-google-cast/pull/536)
-- feat: enable expanded controller in Expo [close #538] [`#538`](https://github.com/react-native-google-cast/react-native-google-cast/issues/538)
-- docs: fix iosStartDiscoveryAfterFirstTapOnCastButton default value [`545e898`](https://github.com/react-native-google-cast/react-native-google-cast/commit/545e89871f8ddea20baa1bcb9d872ede489a4290)
-
-#### [4.8.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.8.1...4.8.2)
-
-> 14 July 2024
-
-- fix(expo): use internal expo plugin & docs(expo): updated docs & chore: fixed testsuite and linting [`#522`](https://github.com/react-native-google-cast/react-native-google-cast/pull/522)
-- Remove jcenter [`#471`](https://github.com/react-native-google-cast/react-native-google-cast/pull/471)
-- fix: example project setup [close #504] [`#504`](https://github.com/react-native-google-cast/react-native-google-cast/issues/504)
-- chore: release 4.8.2 [`389b78e`](https://github.com/react-native-google-cast/react-native-google-cast/commit/389b78e1cc8c37caa3250999c3ba41822b8b9d17)
-
-#### [4.8.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.8.0...4.8.1)
-
-> 26 June 2024
-
-- chore: simplify iOS SDK dependency [`47256b5`](https://github.com/react-native-google-cast/react-native-google-cast/commit/47256b5797f6d88d8a9939171d694fa298f322d6)
-- chore: release 4.8.1 [`822cbac`](https://github.com/react-native-google-cast/react-native-google-cast/commit/822cbac4d9a914914bb773a5da3be369a315a060)
-
-#### [4.8.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.7.0...4.8.0)
-
-> 20 February 2024
-
-- Fix crash in fromGCKColor [`#517`](https://github.com/react-native-google-cast/react-native-google-cast/pull/517)
-- Fix RCTConvert+GCKImage crash [`#516`](https://github.com/react-native-google-cast/react-native-google-cast/pull/516)
-- feat: add liveSeekableRange object to MediaStatus [`#493`](https://github.com/react-native-google-cast/react-native-google-cast/pull/493)
-- fix: prevent crash when ending session due to missing GMS [`#496`](https://github.com/react-native-google-cast/react-native-google-cast/pull/496)
-- [android] Don't send an error in onSessionEnded when user stops casting [`#481`](https://github.com/react-native-google-cast/react-native-google-cast/pull/481)
-- chore: refactor [`17f925a`](https://github.com/react-native-google-cast/react-native-google-cast/commit/17f925ae251c3cf4ad34962b46ffbfb8ecf6ca0b)
-- chore: release 4.8.0 [`4d18f14`](https://github.com/react-native-google-cast/react-native-google-cast/commit/4d18f14f72696d40a31d22129b93f24dd9a8e884)
-- feat: expose requestStatus method [`d474f1f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/d474f1f8244d581c9d2526faf78b49a719de8515)
-
-#### [4.7.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.6.2...4.7.0)
-
-> 8 February 2024
-
-- chore: use official CocoaPods ARM variants [`c5d114a`](https://github.com/react-native-google-cast/react-native-google-cast/commit/c5d114a5b7ab43984bd53a61b5efe1ec4f91dbcf)
-- chore: release 4.7.0 [`3a24312`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3a2431259976471166db3074ab69137ac25c10a4)
-- link to official support [`4a2a129`](https://github.com/react-native-google-cast/react-native-google-cast/commit/4a2a129761acf13bfcf4fb0835d37ee0d5c74ff0)
-
-#### [4.6.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.6.1...4.6.2)
-
-> 15 January 2023
-
-- chore: release 4.6.2 [`9cd8483`](https://github.com/react-native-google-cast/react-native-google-cast/commit/9cd8483a051b8b96a6e4f67fd59dbd250ed4a1e1)
-- fix: prevent crash when no session available #477 [`9901ade`](https://github.com/react-native-google-cast/react-native-google-cast/commit/9901adeaedb06525821be03ed968cad808c02af2)
-
-#### [4.6.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.6.0...4.6.1)
-
-> 4 January 2023
-
-- chore: release 4.6.1 [`de1b999`](https://github.com/react-native-google-cast/react-native-google-cast/commit/de1b999650cbbcdbd80a020c4a1987ed5b6a6849)
-- getCastDevice is nullable [`ec30a78`](https://github.com/react-native-google-cast/react-native-google-cast/commit/ec30a78f922b1039cbc2cf1213c8a7002dcb494f)
-
-#### [4.6.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.5.0...4.6.0)
-
-> 26 November 2022
-
-- fix: check for nulls [close #454] [`#454`](https://github.com/react-native-google-cast/react-native-google-cast/issues/454)
-- chore: copy expo plugin [`833d8b1`](https://github.com/react-native-google-cast/react-native-google-cast/commit/833d8b1a3db991752f8e65978fc6aed235786e5c)
-- chore: release 4.6.0 [`83b97cf`](https://github.com/react-native-google-cast/react-native-google-cast/commit/83b97cf1f93e9f648ac6c78a4844610a7d1b0f16)
-- chore: default to arm-compatible pod [`2a46e59`](https://github.com/react-native-google-cast/react-native-google-cast/commit/2a46e59bdad4420255b17d2aeaf14592b71743c3)
-
-#### [4.5.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.4.1...4.5.0)
-
-> 25 September 2022
-
-- feat: cast channel state and info [close #449] [`#449`](https://github.com/react-native-google-cast/react-native-google-cast/issues/449)
-- bug template [`3b084fa`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3b084faa0b6c19cd4afef05d9e95a06ebca140a3)
-- chore: release 4.5.0 [`b64f40f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/b64f40fc19c89ebcd1393f5ac6cf1e621bb480ed)
-- fix: crash reading notification options #447 [`41cca84`](https://github.com/react-native-google-cast/react-native-google-cast/commit/41cca84169932b17f22274ab2ce8cfd6514e20ca)
-
-#### [4.4.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.4.0...4.4.1)
-
-> 13 August 2022
-
-- chore: release 4.4.1 [`9de4f5a`](https://github.com/react-native-google-cast/react-native-google-cast/commit/9de4f5ae1b8822fd3cfde30e4460097a3b6ee4ac)
-- fix: hls format TS_AAC [`69d49e3`](https://github.com/react-native-google-cast/react-native-google-cast/commit/69d49e30f7bc40130c024ad60119c8022c4843dd)
-
-#### [4.4.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.3.0...4.4.0)
-
-> 9 August 2022
-
-- feat: handle missing play services [`85d722c`](https://github.com/react-native-google-cast/react-native-google-cast/commit/85d722c1119a6b4b82fef4b4afc75f4f2b5d8312)
-- chore: release 4.4.0 [`50ef7c9`](https://github.com/react-native-google-cast/react-native-google-cast/commit/50ef7c9ad6aad44d537e4d21bb9737d50bcd798a)
-
-#### [4.3.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.8...4.3.0)
-
-> 31 July 2022
-
-- chore: support Arm Macs & RN upgrade [`1558f3f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/1558f3ff9e1d6f6bcd744168e361645ad050a07e)
-- chore: release 4.3.0 [`5b279f5`](https://github.com/react-native-google-cast/react-native-google-cast/commit/5b279f55f3ece2f01bdcb7ab301a1280573dadcf)
-
-#### [4.2.8](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.7...4.2.8)
-
-> 6 July 2022
-
-- chore: release 4.2.8 [`9fba8b3`](https://github.com/react-native-google-cast/react-native-google-cast/commit/9fba8b311ff7f6b7842903897b931f26529095a4)
-- fix(ios): added null fallback to adBreakClipInfo dictionary [`6fe9d87`](https://github.com/react-native-google-cast/react-native-google-cast/commit/6fe9d87a39354212f78d50c47d16e3d83e0d2556)
-
-#### [4.2.7](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.6...4.2.7)
-
-> 29 June 2022
-
-- fix: update missing path, following podspec move [`#439`](https://github.com/react-native-google-cast/react-native-google-cast/pull/439)
-- fix: update missing path, following podspec move (#439) [`#438`](https://github.com/react-native-google-cast/react-native-google-cast/issues/438)
-- chore: release 4.2.7 [`7c05cc5`](https://github.com/react-native-google-cast/react-native-google-cast/commit/7c05cc55343f3edfda5bddf1f728b47d4003f656)
-- docs: m1 beta installation [`dfd88e7`](https://github.com/react-native-google-cast/react-native-google-cast/commit/dfd88e7894fa79b09f3d93344a2bde6b12a65edb)
-- chore: clean up redundancy [`1af23b0`](https://github.com/react-native-google-cast/react-native-google-cast/commit/1af23b04d4f41c97a39974499e0e5cbcc3068c79)
-
-#### [4.2.6](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.5...4.2.6)
-
-> 26 June 2022
-
-- chore: release 4.2.6 [`a031d09`](https://github.com/react-native-google-cast/react-native-google-cast/commit/a031d0978cff9d544981d3af11897752c2358a21)
-- fix: link podspec properly [`d803990`](https://github.com/react-native-google-cast/react-native-google-cast/commit/d8039904dd7679509920cea29784ebfbeac08bc7)
-
-#### [4.2.5](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.4...4.2.5)
-
-> 25 June 2022
-
-- fix: podspec location [close #438] [`#438`](https://github.com/react-native-google-cast/react-native-google-cast/issues/438)
-- chore: release 4.2.5 [`6242d28`](https://github.com/react-native-google-cast/react-native-google-cast/commit/6242d284566a1de7bcedec87b53a1c9910758957)
-- docs: troubleshooting unsupported devices [`ee3428c`](https://github.com/react-native-google-cast/react-native-google-cast/commit/ee3428cf992d052badc6d05d13faab665e82a39d)
-
-#### [4.2.4](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.3...4.2.4)
-
-> 13 March 2022
-
-- fix (example): call mergeOptions when mounted [`1c0017c`](https://github.com/react-native-google-cast/react-native-google-cast/commit/1c0017ced9d8af360d9cf55e2ecbc3d4dfa1f72f)
-- chore: release 4.2.4 [`f82434c`](https://github.com/react-native-google-cast/react-native-google-cast/commit/f82434c849b9290cfd87fd6b3b885b99a266f69a)
-- fix (android): filter duplicate devices #375 [`0c332c7`](https://github.com/react-native-google-cast/react-native-google-cast/commit/0c332c79f4b6d7f1b6fbac379037c0e6bed0e164)
-
-#### [4.2.3](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.2...4.2.3)
-
-> 11 March 2022
-
-- fix: resolve requests [close #296] [`#296`](https://github.com/react-native-google-cast/react-native-google-cast/issues/296)
-- chore: release 4.2.3 [`4b3fde6`](https://github.com/react-native-google-cast/react-native-google-cast/commit/4b3fde6964106a95d9b1f3b10f253668a5bb9bf2)
-- docs: set tintColor [`86eae55`](https://github.com/react-native-google-cast/react-native-google-cast/commit/86eae55876cee94ab57dcd5ad23832182c67c7d8)
-- docs: showCastDialog limitations [`a5231aa`](https://github.com/react-native-google-cast/react-native-google-cast/commit/a5231aa5e608d6877ef6bb276e876ef0571d2484)
-
-#### [4.2.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.1...4.2.2)
-
-> 7 March 2022
-
-- chore: release 4.2.2 [`929ca26`](https://github.com/react-native-google-cast/react-native-google-cast/commit/929ca269fbd0f45ea9627a14ea6e5206bcd8f4e8)
-- fix: missing import [`04cf5df`](https://github.com/react-native-google-cast/react-native-google-cast/commit/04cf5df3bc5d16cb0c0ea26dfbef60506d904ccb)
-
-#### [4.2.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.2.0...4.2.1)
-
-> 6 March 2022
-
-- Added device capability array to Device [`#396`](https://github.com/react-native-google-cast/react-native-google-cast/pull/396)
-- chore: release 4.2.1 [`e9e601b`](https://github.com/react-native-google-cast/react-native-google-cast/commit/e9e601bc8e8f653d025d1020b8a60c0f377b1791)
-
-#### [4.2.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.1.3...4.2.0)
-
-> 27 February 2022
-
-- fix: mediaInfo can be null [close #327] [`#327`](https://github.com/react-native-google-cast/react-native-google-cast/issues/327)
-- fix (android): CastButton init [close #352] [`#352`](https://github.com/react-native-google-cast/react-native-google-cast/issues/352)
-- chore: update dependencies [`7f9d066`](https://github.com/react-native-google-cast/react-native-google-cast/commit/7f9d0665d18569c2d82d64fc7ff919fb2b5c1715)
-- feat: ignoreBackgrounding for useCastSession [`4644b3e`](https://github.com/react-native-google-cast/react-native-google-cast/commit/4644b3ea21f73a3e8150f12cb375a1c3d0499587)
-- chore: release 4.2.0 [`f85f694`](https://github.com/react-native-google-cast/react-native-google-cast/commit/f85f694a68490a9297dd9920dfb692ab490f65f6)
-
-#### [4.1.3](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.1.2...4.1.3)
-
-> 26 February 2022
-
-- fix: prevent crash when GooglePlay services is missing or running on Android TV [`#367`](https://github.com/react-native-google-cast/react-native-google-cast/pull/367)
-- Fix color parsing [close #350] [`#350`](https://github.com/react-native-google-cast/react-native-google-cast/issues/350)
-- chore: release 4.1.3 [`4647572`](https://github.com/react-native-google-cast/react-native-google-cast/commit/4647572cd64bb22caa013a9b986d830ef1e8ab6c)
-- docs: using Expo, Android 12, and iOS 12+ [`7f9a8eb`](https://github.com/react-native-google-cast/react-native-google-cast/commit/7f9a8eb634c53c63387eafdc69c9b026ce375d00)
-- fix: required authors field [`75d6161`](https://github.com/react-native-google-cast/react-native-google-cast/commit/75d61613cec22a7729eea54a756b9419cbe84bb8)
-
-#### [4.1.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.1.1...4.1.2)
-
-> 24 June 2021
-
-- fix: run startDiscovery and stopDiscovery on the iOS main thread [`#340`](https://github.com/react-native-google-cast/react-native-google-cast/pull/340)
-- feat: implement session setMute and setVolume [`c4e55fb`](https://github.com/react-native-google-cast/react-native-google-cast/commit/c4e55fb09269d6ea434d3f98df2ad1f6f2dad683)
-- chore: release 4.1.2 [`ee21864`](https://github.com/react-native-google-cast/react-native-google-cast/commit/ee218647796be113882451d9a40c40ff240fdd1b)
-
-#### [4.1.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.1.0...4.1.1)
-
-> 22 June 2021
-
-- fix: invalidate compat with RN &lt;=63 [close #339] [`#339`](https://github.com/react-native-google-cast/react-native-google-cast/issues/339)
-- docs: provide a full usage example [`60e1324`](https://github.com/react-native-google-cast/react-native-google-cast/commit/60e13243a9e6a56110af1470212274859e4c1ca1)
-- chore: release 4.1.1 [`5bb04a5`](https://github.com/react-native-google-cast/react-native-google-cast/commit/5bb04a583d2be9e6a62eacdb216c1d9c86b2fef7)
-- docs: update castFrameworkVersion [`f2fd82b`](https://github.com/react-native-google-cast/react-native-google-cast/commit/f2fd82b2a1576663cbc56c5b61a5f5c0f7fced5e)
-
-#### [4.1.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.3...4.1.0)
-
-> 20 June 2021
-
-- hslSegmentFormat and hlsVideoSegmentFormat android support [`#323`](https://github.com/react-native-google-cast/react-native-google-cast/pull/323)
-- Fix CastButton tintColor on Android [`#335`](https://github.com/react-native-google-cast/react-native-google-cast/pull/335)
-- Fix example [`#320`](https://github.com/react-native-google-cast/react-native-google-cast/pull/320)
-- feat: manage devices and sessions [close #306] [`#306`](https://github.com/react-native-google-cast/react-native-google-cast/issues/306)
-- fix: use relative imports [close #318] [`#318`](https://github.com/react-native-google-cast/react-native-google-cast/issues/318)
-- chore: update dependencies [`5c16fc6`](https://github.com/react-native-google-cast/react-native-google-cast/commit/5c16fc61b163d9b7760edf27104dd6a0062b7f93)
-- chore: release 4.1.0 [`a33dab1`](https://github.com/react-native-google-cast/react-native-google-cast/commit/a33dab1ee201416e1fa70a0641f7ad2b7d040cd1)
-- feat: hlsSegmentFormat for ios #278 [`332b507`](https://github.com/react-native-google-cast/react-native-google-cast/commit/332b5070f0046cc2d8f5f964fa486cea5ef4edee)
-
-#### [4.0.3](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.2...4.0.3)
-
-> 27 March 2021
-
-- Fixes clearing behavior in setProgressUpdateInterval [`#313`](https://github.com/react-native-google-cast/react-native-google-cast/pull/313)
-- Link ios as static_framework [`#312`](https://github.com/react-native-google-cast/react-native-google-cast/pull/312)
-- chore: release 4.0.3 [`46d656a`](https://github.com/react-native-google-cast/react-native-google-cast/commit/46d656a82cb966fcd54c02d5d5a865b6c24e7b43)
-
-#### [4.0.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.1...4.0.2)
-
-> 26 February 2021
-
-- fix JS not getting events if expanded controls are open in Android [`#300`](https://github.com/react-native-google-cast/react-native-google-cast/pull/300)
-- Android: support the case that multiple CastButtons are rendered [`#299`](https://github.com/react-native-google-cast/react-native-google-cast/pull/299)
-- fix: Crash on iOS when using SessionManager events and reloading [`#285`](https://github.com/react-native-google-cast/react-native-google-cast/pull/285)
-- Fix linker warnings from iOS react-native-google-cast [`#293`](https://github.com/react-native-google-cast/react-native-google-cast/pull/293)
-- docs: improve setup instructions [`5a447b4`](https://github.com/react-native-google-cast/react-native-google-cast/commit/5a447b4e469c94350a424abd8ec69b768a141a91)
-- chore: release 4.0.2 [`89f0895`](https://github.com/react-native-google-cast/react-native-google-cast/commit/89f08951d9043a71f296039b5da04b62f1761a35)
-
-#### [4.0.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.0...4.0.1)
-
-> 27 January 2021
-
-- fix: setActiveMediaTracks [close #280] [`#280`](https://github.com/react-native-google-cast/react-native-google-cast/issues/280)
-- fix: xcodeproj file references [close #281] [`#281`](https://github.com/react-native-google-cast/react-native-google-cast/issues/281)
-- fix: set active media tracks #277 [`a43a7fd`](https://github.com/react-native-google-cast/react-native-google-cast/commit/a43a7fd310c82808c73eaf6ddc1cb0d70c080248)
-- chore: release 4.0.1 [`bfee08e`](https://github.com/react-native-google-cast/react-native-google-cast/commit/bfee08ee0a637fa3b1a37e8a5c269b5398b1489e)
-- fix: check for invalid default values [`706faa3`](https://github.com/react-native-google-cast/react-native-google-cast/commit/706faa3b2e37e0d297f181778de76708b7cbd104)
-
-### [4.0.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.0-beta.6...4.0.0)
-
-> 3 January 2021
-
-- feat: media events; close #257 [`#257`](https://github.com/react-native-google-cast/react-native-google-cast/issues/257)
-- feat: end session; close #241 [`#241`](https://github.com/react-native-google-cast/react-native-google-cast/issues/241)
-- docs: swift instructions; close #212 [`#212`](https://github.com/react-native-google-cast/react-native-google-cast/issues/212)
-- feat: custom channels; close #223 #165 [`#223`](https://github.com/react-native-google-cast/react-native-google-cast/issues/223)
-- chore: update dependencies [`f455cea`](https://github.com/react-native-google-cast/react-native-google-cast/commit/f455ceaf2c569079b05a590aee2d17cb023cf915)
-- feat: discovery manager #221 [`3c3be54`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3c3be54b1dd79ae8bbee2143abe27894cda01a58)
-- feat: android notification buttons #252 [`d193613`](https://github.com/react-native-google-cast/react-native-google-cast/commit/d193613a5478ee59ee362d500ff7a8a1b321030b)
-
-#### [4.0.0-beta.6](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.0-beta.5...4.0.0-beta.6)
-
-> 15 December 2020
-
-- fix: play and pause on Android V4 [`#250`](https://github.com/react-native-google-cast/react-native-google-cast/pull/250)
-- fix: client already removed; fixes #251 [`#251`](https://github.com/react-native-google-cast/react-native-google-cast/issues/251)
-- chore: release 4.0.0-beta.6 [`ca56a24`](https://github.com/react-native-google-cast/react-native-google-cast/commit/ca56a242e057b3d0aaabe439d02b886dc200d934)
-
-#### [4.0.0-beta.5](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.0-beta.4...4.0.0-beta.5)
-
-> 14 December 2020
-
-- feat: media status event; closes #237 [`#237`](https://github.com/react-native-google-cast/react-native-google-cast/issues/237)
-- fix: cast state listener; close #243 [`#243`](https://github.com/react-native-google-cast/react-native-google-cast/issues/243)
-- fix: check for null values; closes #232 [`#232`](https://github.com/react-native-google-cast/react-native-google-cast/issues/232)
-- docs: clarify installation & setup #240 [`9d59be6`](https://github.com/react-native-google-cast/react-native-google-cast/commit/9d59be63c8f9b6d6ea626845c7585d37fa8a93b8)
-- chore: release 4.0.0-beta.5 [`3ba476f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3ba476faedb75361e6e645af98c5190785663a2d)
-- fix: times in seconds [Android] #244 [`64c483b`](https://github.com/react-native-google-cast/react-native-google-cast/commit/64c483b06c5e7c7762e4564cd255c9b04c33775c)
-
-#### [4.0.0-beta.4](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.0-beta.3...4.0.0-beta.4)
-
-> 27 November 2020
-
-- chore: release 4.0.0-beta.4 [`6c19fec`](https://github.com/react-native-google-cast/react-native-google-cast/commit/6c19fece580f17f644015835fbdd41d4136fbfa9)
-- docs: ios installation & queue [`fc8e40c`](https://github.com/react-native-google-cast/react-native-google-cast/commit/fc8e40cbb1f2da5b7250158abd2ace5ce461324b)
-
-#### [4.0.0-beta.3](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.0-beta.2...4.0.0-beta.3)
-
-> 27 November 2020
-
-- Added queueSkip and queuePrev to manage media queue [`#236`](https://github.com/react-native-google-cast/react-native-google-cast/pull/236)
-- chore: release 4.0.0-beta.3 [`21c7ba8`](https://github.com/react-native-google-cast/react-native-google-cast/commit/21c7ba8d90c5810393d12db6970a78003855f4d5)
-
-#### [4.0.0-beta.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/4.0.0-beta.1...4.0.0-beta.2)
-
-> 24 November 2020
-
-- fix: #233 Adding items to queue [`7af4baa`](https://github.com/react-native-google-cast/react-native-google-cast/commit/7af4baa7793a583378d6ca29eecd5667c197cd25)
-- chore: release 4.0.0-beta.2 [`1f23b44`](https://github.com/react-native-google-cast/react-native-google-cast/commit/1f23b44ceaf690d51d54c078108de59f6d58bb51)
-
-#### [4.0.0-beta.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.4.1...4.0.0-beta.1)
-
-> 31 October 2020
-
-- Properly point to podspec [`#217`](https://github.com/react-native-google-cast/react-native-google-cast/pull/217)
-- build: set up bob [`c2af14a`](https://github.com/react-native-google-cast/react-native-google-cast/commit/c2af14ad2eaef6f3f6b561345cdcb7954e3960e0)
-- feat(sdk): latest SDK updates [`2e61c53`](https://github.com/react-native-google-cast/react-native-google-cast/commit/2e61c535b064b6b5ddc4370b886e43e0d5a9950c)
-- Update example project using the new APIs [`77024e8`](https://github.com/react-native-google-cast/react-native-google-cast/commit/77024e8b709c2aff1c917e20275553bcde2301e7)
-
-#### [3.4.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.4.0...3.4.1)
-
-> 12 December 2020
-
-- Migrate the podspec file to root [`#245`](https://github.com/react-native-google-cast/react-native-google-cast/pull/245)
-- Version 3.4.1 [`aba40b8`](https://github.com/react-native-google-cast/react-native-google-cast/commit/aba40b886d80023717fb034253ccc0a37f964f83)
-
-#### [3.4.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.3.0...3.4.0)
-
-> 3 November 2020
-
-- Enable latest iOS SDK versions, closes #221 [`#221`](https://github.com/react-native-google-cast/react-native-google-cast/issues/221)
-- Fix #226 crash when imageUrl undefined [`#226`](https://github.com/react-native-google-cast/react-native-google-cast/issues/226)
-- Version 3.4.0 [`313a94f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/313a94f770be020181aae4754d25c6251c831b78)
-- Initialize Google Cast lib before React bridge [`f89405e`](https://github.com/react-native-google-cast/react-native-google-cast/commit/f89405e312b367c3a32bdf75547ed6cbe27f9893)
-
-#### [3.3.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.2.2...3.3.0)
-
-> 16 February 2020
-
-- Add toggleSubtitles method for iOS [`#176`](https://github.com/react-native-google-cast/react-native-google-cast/pull/176)
-- Bump sshpk from 1.13.1 to 1.16.1 [`#156`](https://github.com/react-native-google-cast/react-native-google-cast/pull/156)
-- Update docs for toggleSubtitles [`3ac665f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3ac665f77b0f777e9fb9678a8cbba186e86197bc)
-- Version 3.3.0 [`71dae0b`](https://github.com/react-native-google-cast/react-native-google-cast/commit/71dae0b74421513959394470fa64fe9f04a979f5)
-- docs: add missing imports for custom apps [`3017304`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3017304ff93bc81d025cb2866508577abdb89082)
-
-#### [3.2.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.2.1...3.2.2)
-
-> 13 November 2019
-
-- Add missing types [`c8e0fe1`](https://github.com/react-native-google-cast/react-native-google-cast/commit/c8e0fe1e927e824468585dd20b62eec1cea1a079)
-- Version 3.2.2 [`cb73db1`](https://github.com/react-native-google-cast/react-native-google-cast/commit/cb73db1323e4aed77de5d5eb49e4d44212bc907d)
-
-#### [3.2.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.1.2...3.2.1)
-
-> 29 October 2019
-
-- [feat][Android] Add ability to show subtitles and style them [`#127`](https://github.com/react-native-google-cast/react-native-google-cast/pull/127)
-- [feat] Adding typescript type definitions [`#128`](https://github.com/react-native-google-cast/react-native-google-cast/pull/128)
-- Add showCastPicker method to show the cast picker dialog without… [`#149`](https://github.com/react-native-google-cast/react-native-google-cast/pull/149)
-- Constrain play-services-cast-framework version to 16.2.0 [`#121`](https://github.com/react-native-google-cast/react-native-google-cast/pull/121)
-- Fix iOS SDK dependency, upgrade example to 0.59.10 [`625c638`](https://github.com/react-native-google-cast/react-native-google-cast/commit/625c638e40e8edeec466905adb6cc6cc1c9c1948)
-- Add protection for not update-to-date or missing google play services [`ec143cd`](https://github.com/react-native-google-cast/react-native-google-cast/commit/ec143cd04a9c5bf2c54b679b7e076bea2659644f)
-- [bug][Android] More NPE protection for casting operations [`9474a46`](https://github.com/react-native-google-cast/react-native-google-cast/commit/9474a468f8d1c16041609267cb80604bf4ffad59)
-
-#### [3.1.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.0.5...3.1.2)
-
-> 30 April 2019
-
-- corrected README for Android setup [`#99`](https://github.com/react-native-google-cast/react-native-google-cast/pull/99)
-- feat: Can pass customData to receiver [`#96`](https://github.com/react-native-google-cast/react-native-google-cast/pull/96)
-- Docs: add required step for iOS 12 setup (enable wifi access) [`#82`](https://github.com/react-native-google-cast/react-native-google-cast/pull/82)
-- Add proper search path to fix the issue #51 where GoogleCast.h cannot be found [`#84`](https://github.com/react-native-google-cast/react-native-google-cast/pull/84)
-- [Android] initChannel and sendMessage [`#90`](https://github.com/react-native-google-cast/react-native-google-cast/pull/90)
-- [iOS] Fix #75 tintColor [`#75`](https://github.com/react-native-google-cast/react-native-google-cast/issues/75)
-- Installation instructions [`c051eef`](https://github.com/react-native-google-cast/react-native-google-cast/commit/c051eef52135e3a3cc73ca7ccb5779886dea9e2f)
-- Fix custom messages + sample receiver [`850ad0f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/850ad0fdd8f97f8db7da2413c4c78d30e043ee19)
-- Add getCastDevice [`9074a79`](https://github.com/react-native-google-cast/react-native-google-cast/commit/9074a79b4c04c46744a2e735d055a530abceaf89)
-
-#### [3.0.5](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.0.4...3.0.5)
-
-> 24 January 2019
-
-- Added missing Cast Button to Androids Expanded Media Controller [`#78`](https://github.com/react-native-google-cast/react-native-google-cast/pull/78)
-- Version 3.0.5 [`715605f`](https://github.com/react-native-google-cast/react-native-google-cast/commit/715605fce7ee409202a18434fd259159fc75b088)
-
-#### [3.0.4](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.0.3...3.0.4)
-
-> 15 January 2019
-
-- Add optional contentType config to castMedia() [`#73`](https://github.com/react-native-google-cast/react-native-google-cast/pull/73)
-- Media Progress Listener [`90a35d1`](https://github.com/react-native-google-cast/react-native-google-cast/commit/90a35d11ef4a3c8f1acaa00199fb9f5381ee0c01)
-- Log progress update in example app [`fcc1cc0`](https://github.com/react-native-google-cast/react-native-google-cast/commit/fcc1cc0822b0fd9ac033d6b2ba8db77b240502a6)
-- Fix Android castMedia parameters [`3487dc2`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3487dc294bc534c9484619155f7c2d97dd3d97c4)
-
-#### [3.0.3](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.0.2...3.0.3)
-
-> 11 January 2019
-
-- Fix package locations [`0602a9c`](https://github.com/react-native-google-cast/react-native-google-cast/commit/0602a9c014d7100cade46110cf16a180e76ed760)
-- Version 3.0.3 [`da09e82`](https://github.com/react-native-google-cast/react-native-google-cast/commit/da09e826674c4249a28cc96ce08a55eba7478c14)
-
-#### [3.0.2](https://github.com/react-native-google-cast/react-native-google-cast/compare/3.0.1...3.0.2)
-
-> 11 January 2019
-
-- Instructions for custom receiver app on Android [`3cc8d4b`](https://github.com/react-native-google-cast/react-native-google-cast/commit/3cc8d4b5044f3ced9437ba02195016172c658320)
-- Version 3.0.2 [`b68cd03`](https://github.com/react-native-google-cast/react-native-google-cast/commit/b68cd033890f5b1e8e96a06f5dc061f7e6a6af8e)
-
-### [3.0.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/1.3.1...3.0.1)
-
-> 11 January 2019
-
-- V3 [`#71`](https://github.com/react-native-google-cast/react-native-google-cast/pull/71)
-- V3 [`#70`](https://github.com/react-native-google-cast/react-native-google-cast/pull/70)
-- Update example project to RN 0.55.4 [`#14`](https://github.com/react-native-google-cast/react-native-google-cast/pull/14)
-- Changed podfile example to version "2.10.4.1" [`#38`](https://github.com/react-native-google-cast/react-native-google-cast/pull/38)
-- Support for specific app id. [`#29`](https://github.com/react-native-google-cast/react-native-google-cast/pull/29)
-- reorganize example project dependencies and files [`548f0d5`](https://github.com/react-native-google-cast/react-native-google-cast/commit/548f0d573de78270de413f9270931abad2ec526d)
-- Support React Native 0.57 [`beb6a68`](https://github.com/react-native-google-cast/react-native-google-cast/commit/beb6a68646b0c138ec067ff944531d7e098c9a9f)
-- upgraded sdk for iOS to v3 [`7b4b829`](https://github.com/react-native-google-cast/react-native-google-cast/commit/7b4b8293ae0643b9ab3bb94a80118ffb147f5c0e)
-
-#### [1.3.1](https://github.com/react-native-google-cast/react-native-google-cast/compare/1.3.0...1.3.1)
-
-> 11 January 2019
-
-- Fix compat with RN 0.47 [`fe5c120`](https://github.com/react-native-google-cast/react-native-google-cast/commit/fe5c1209e074599ed5154d5d008c98eb858768d8)
-
-### [1.3.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/0.1.0...1.3.0)
-
-> 9 April 2017
-
-- Fix bug when two chromecast devices are connected [`#27`](https://github.com/react-native-google-cast/react-native-google-cast/pull/27)
-- compatibility with RN 0.40+ [`#24`](https://github.com/react-native-google-cast/react-native-google-cast/pull/24)
-- moved array declaration inside loop to avoid same referencing to fix … [`#17`](https://github.com/react-native-google-cast/react-native-google-cast/pull/17)
-- upgraded example and module version [`265d770`](https://github.com/react-native-google-cast/react-native-google-cast/commit/265d7705210f293378663284ab75c1ef779cc66d)
-- added example inside the project [`0d699fc`](https://github.com/react-native-google-cast/react-native-google-cast/commit/0d699fc085699c60e5d20d8a1d19870a60a20120)
-- using react-native-library as a template [`1643813`](https://github.com/react-native-google-cast/react-native-google-cast/commit/1643813d16cc192653aea428868316e033db9e2c)
-
-#### [0.1.0](https://github.com/react-native-google-cast/react-native-google-cast/compare/0.0.1...0.1.0)
-
-> 1 July 2016
-
-- attempt to use cocoapods [`c47ea2e`](https://github.com/react-native-google-cast/react-native-google-cast/commit/c47ea2e424c6798615015c0eea44e9c6e05fcb85)
-- attempt to use cocoapods [`6614ba2`](https://github.com/react-native-google-cast/react-native-google-cast/commit/6614ba297647d941347ff9e412e2a23f765c6c0f)
-- chromecast for iOS - READY [`eefd302`](https://github.com/react-native-google-cast/react-native-google-cast/commit/eefd30264aceb0ccf9d34366be4ef0cea6177364)
-
-#### 0.0.1
-
-> 13 June 2016
-
-- First commit [`39e918a`](https://github.com/react-native-google-cast/react-native-google-cast/commit/39e918a4c8743128aebf0f9ee881c43d28f9c9bb)
-- chromecast - android support! [`a881868`](https://github.com/react-native-google-cast/react-native-google-cast/commit/a88186815955ef8853d38e194e6f4648ce70c909)
-- renaming android implementation [`a0492cb`](https://github.com/react-native-google-cast/react-native-google-cast/commit/a0492cb0c18fe5635d401b434d58d5c78f4b46c8)
+#### 4.9.0
+
+- added namespace for AGP version 7+ [`#536`](https://github.com/bittu/react-native-gcast/pull/536)
+- fix(expo): use internal expo plugin & docs(expo): updated docs & chore: fixed testsuite and linting [`#522`](https://github.com/bittu/react-native-gcast/pull/522)
+- Remove jcenter [`#471`](https://github.com/bittu/react-native-gcast/pull/471)
+- Fix crash in fromGCKColor [`#517`](https://github.com/bittu/react-native-gcast/pull/517)
+- Fix RCTConvert+GCKImage crash [`#516`](https://github.com/bittu/react-native-gcast/pull/516)
+- feat: add liveSeekableRange object to MediaStatus [`#493`](https://github.com/bittu/react-native-gcast/pull/493)
+- fix: prevent crash when ending session due to missing GMS [`#496`](https://github.com/bittu/react-native-gcast/pull/496)
+- [android] Don't send an error in onSessionEnded when user stops casting [`#481`](https://github.com/bittu/react-native-gcast/pull/481)
+- fix: update missing path, following podspec move [`#439`](https://github.com/bittu/react-native-gcast/pull/439)
+- Added device capability array to Device [`#396`](https://github.com/bittu/react-native-gcast/pull/396)
+- fix: prevent crash when GooglePlay services is missing or running on Android TV [`#367`](https://github.com/bittu/react-native-gcast/pull/367)
+- fix: run startDiscovery and stopDiscovery on the iOS main thread [`#340`](https://github.com/bittu/react-native-gcast/pull/340)
+- hslSegmentFormat and hlsVideoSegmentFormat android support [`#323`](https://github.com/bittu/react-native-gcast/pull/323)
+- Fix CastButton tintColor on Android [`#335`](https://github.com/bittu/react-native-gcast/pull/335)
+- Fix example [`#320`](https://github.com/bittu/react-native-gcast/pull/320)
+- Fixes clearing behavior in setProgressUpdateInterval [`#313`](https://github.com/bittu/react-native-gcast/pull/313)
+- Link ios as static_framework [`#312`](https://github.com/bittu/react-native-gcast/pull/312)
+- fix JS not getting events if expanded controls are open in Android [`#300`](https://github.com/bittu/react-native-gcast/pull/300)
+- Android: support the case that multiple CastButtons are rendered [`#299`](https://github.com/bittu/react-native-gcast/pull/299)
+- fix: Crash on iOS when using SessionManager events and reloading [`#285`](https://github.com/bittu/react-native-gcast/pull/285)
+- Fix linker warnings from iOS react-native-google-cast [`#293`](https://github.com/bittu/react-native-gcast/pull/293)
+- fix: play and pause on Android V4 [`#250`](https://github.com/bittu/react-native-gcast/pull/250)
+- Added queueSkip and queuePrev to manage media queue [`#236`](https://github.com/bittu/react-native-gcast/pull/236)
+- Properly point to podspec [`#217`](https://github.com/bittu/react-native-gcast/pull/217)
+- V3 [`#71`](https://github.com/bittu/react-native-gcast/pull/71)
+- V3 [`#70`](https://github.com/bittu/react-native-gcast/pull/70)
+- Update example project to RN 0.55.4 [`#14`](https://github.com/bittu/react-native-gcast/pull/14)
+- Changed podfile example to version "2.10.4.1" [`#38`](https://github.com/bittu/react-native-gcast/pull/38)
+- Support for specific app id. [`#29`](https://github.com/bittu/react-native-gcast/pull/29)
+- Fix bug when two chromecast devices are connected [`#27`](https://github.com/bittu/react-native-gcast/pull/27)
+- compatibility with RN 0.40+ [`#24`](https://github.com/bittu/react-native-gcast/pull/24)
+- moved array declaration inside loop to avoid same referencing to fix … [`#17`](https://github.com/bittu/react-native-gcast/pull/17)
+- feat: enable expanded controller in Expo [close #538] [`#538`](https://github.com/bittu/react-native-gcast/issues/538)
+- fix: example project setup [close #504] [`#504`](https://github.com/bittu/react-native-gcast/issues/504)
+- fix: check for nulls [close #454] [`#454`](https://github.com/bittu/react-native-gcast/issues/454)
+- feat: cast channel state and info [close #449] [`#449`](https://github.com/bittu/react-native-gcast/issues/449)
+- fix: update missing path, following podspec move (#439) [`#438`](https://github.com/bittu/react-native-gcast/issues/438)
+- fix: podspec location [close #438] [`#438`](https://github.com/bittu/react-native-gcast/issues/438)
+- fix: resolve requests [close #296] [`#296`](https://github.com/bittu/react-native-gcast/issues/296)
+- fix: mediaInfo can be null [close #327] [`#327`](https://github.com/bittu/react-native-gcast/issues/327)
+- fix (android): CastButton init [close #352] [`#352`](https://github.com/bittu/react-native-gcast/issues/352)
+- Fix color parsing [close #350] [`#350`](https://github.com/bittu/react-native-gcast/issues/350)
+- fix: invalidate compat with RN &lt;=63 [close #339] [`#339`](https://github.com/bittu/react-native-gcast/issues/339)
+- feat: manage devices and sessions [close #306] [`#306`](https://github.com/bittu/react-native-gcast/issues/306)
+- fix: use relative imports [close #318] [`#318`](https://github.com/bittu/react-native-gcast/issues/318)
+- fix: setActiveMediaTracks [close #280] [`#280`](https://github.com/bittu/react-native-gcast/issues/280)
+- fix: xcodeproj file references [close #281] [`#281`](https://github.com/bittu/react-native-gcast/issues/281)
+- feat: media events; close #257 [`#257`](https://github.com/bittu/react-native-gcast/issues/257)
+- feat: end session; close #241 [`#241`](https://github.com/bittu/react-native-gcast/issues/241)
+- docs: swift instructions; close #212 [`#212`](https://github.com/bittu/react-native-gcast/issues/212)
+- feat: custom channels; close #223 #165 [`#223`](https://github.com/bittu/react-native-gcast/issues/223)
+- fix: client already removed; fixes #251 [`#251`](https://github.com/bittu/react-native-gcast/issues/251)
+- feat: media status event; closes #237 [`#237`](https://github.com/bittu/react-native-gcast/issues/237)
+- fix: cast state listener; close #243 [`#243`](https://github.com/bittu/react-native-gcast/issues/243)
+- fix: check for null values; closes #232 [`#232`](https://github.com/bittu/react-native-gcast/issues/232)
+- build: set up bob [`c2af14a`](https://github.com/bittu/react-native-gcast/commit/c2af14ad2eaef6f3f6b561345cdcb7954e3960e0)
+- chore: update dependencies [`5c16fc6`](https://github.com/bittu/react-native-gcast/commit/5c16fc61b163d9b7760edf27104dd6a0062b7f93)
+- chore: support Arm Macs & RN upgrade [`1558f3f`](https://github.com/bittu/react-native-gcast/commit/1558f3ff9e1d6f6bcd744168e361645ad050a07e)
