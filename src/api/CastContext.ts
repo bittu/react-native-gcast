@@ -11,7 +11,7 @@ const { RNGCCastContext: Native } = NativeModules
  *
  * @example
  * ```js
- * import GoogleCast, { CastContext } from 'react-native-google-cast'
+ * import GoogleCast, { CastContext } from 'react-native-gcast'
  * // GoogleCast and CastContext are equivalent
  * ```
  *

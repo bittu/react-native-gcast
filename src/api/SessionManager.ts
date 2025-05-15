@@ -23,7 +23,7 @@ const { RNGCSessionManager: Native } = NativeModules
  *
  * @example
  * ```js
- * import GoogleCast from 'react-native-google-cast'
+ * import GoogleCast from 'react-native-gcast'
  *
  * function MyComponent() {
  *   const sessionManager = GoogleCast.getSessionManager()

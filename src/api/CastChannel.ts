@@ -13,7 +13,7 @@ const { RNGCCastSession: Native } = NativeModules
  *
  * @example
  * ```js
- * import { CastChannel } from 'react-native-google-cast'
+ * import { CastChannel } from 'react-native-gcast'
  *
  * const channel = await castSession.addChannel('urn:x-cast:com.example.custom')
  *

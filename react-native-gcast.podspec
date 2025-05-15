@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.source = {
-    git: 'https://github.com/react-native-google-cast/react-native-google-cast.git',
+    git: 'https://github.com/bittu/react-native-gcast.git',
     tag: s.version.to_s
   }
 

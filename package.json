@@ -1,5 +1,5 @@
 {
-  "name": "react-native-google-cast",
+  "name": "react-native-gcast",
   "version": "4.8.3",
   "description": "React Native wrapper for the Google Cast SDK for iOS and Android",
   "main": "lib/commonjs/index",
@@ -21,16 +21,16 @@
     "!**/__mocks__",
     "lib/**/*",
     "app.plugin.js",
-    "react-native-google-cast.podspec"
+    "react-native-gcast.podspec"
   ],
   "contributors": [
     "Charlie L <charliesbot@gmail.com>",
     "Petr Bela <github@petrbela.com>"
   ],
-  "homepage": "https://github.com/react-native-google-cast/react-native-google-cast",
+  "homepage": "https://github.com/bittu/react-native-gcast",
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-google-cast/react-native-google-cast.git"
+    "url": "https://github.com/bittu/react-native-gcast.git"
   },
   "license": "MIT",
   "scripts": {

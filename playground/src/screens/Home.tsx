@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native'
 import { StackNavigationProp } from '@react-navigation/stack'
 import React, { useEffect } from 'react'
 import { Button, SectionList, Text, View } from 'react-native'
-import CastContext, { PlayServicesState } from 'react-native-google-cast'
+import CastContext, { PlayServicesState } from 'react-native-gcast'
 import { RootStackParamList } from './types'
 
 export interface HomeProps {}

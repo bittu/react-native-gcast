@@ -15,7 +15,7 @@ The library emits events to inform you about current state.
 Triggered when the [CastState](../api/classes/castcontext#static-getcaststate) changes.
 
 ```js
-import GoogleCast from 'react-native-google-cast'
+import GoogleCast from 'react-native-gcast'
 
 const listener = GoogleCast.onCastStateChanged((castState) => {
   // 'noDevicesAvailable' | 'notConnected' | 'connecting' | 'connected'
@@ -30,7 +30,7 @@ listener.remove()
 A session is an end-to-end connection from a sender application (mobile app) to a receiver application (on Chromecast).
 
 ```js
-import GoogleCast from 'react-native-google-cast'
+import GoogleCast from 'react-native-gcast'
 
 const sessionManager = GoogleCast.getSessionManager()
 

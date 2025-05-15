@@ -14,7 +14,7 @@ const { RNGCDiscoveryManager: Native } = NativeModules
  *
  * @example
  * ```ts
- * import GoogleCast from 'react-native-google-cast'
+ * import GoogleCast from 'react-native-gcast'
  *
  * function MyComponent() {
  *   const discoveryManager = GoogleCast.getDiscoveryManager()

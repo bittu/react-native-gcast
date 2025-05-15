@@ -286,7 +286,7 @@ dependencies {
     }
 
     // In RN60+, this is not necessary if you're using autolinking
-    implementation project(':react-native-google-cast')
+    implementation project(':react-native-gcast')
 
     implementation "com.google.android.gms:play-services-cast-framework:${safeExtGet('castFrameworkVersion', '+')}"
 }

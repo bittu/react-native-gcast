@@ -5,7 +5,7 @@ import {
   MediaInfo,
   useMediaStatus,
   useRemoteMediaClient,
-} from 'react-native-google-cast'
+} from 'react-native-gcast'
 
 export default function Queue() {
   const client = useRemoteMediaClient()

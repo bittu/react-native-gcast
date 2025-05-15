@@ -9,7 +9,7 @@ The Cast button displays the Cast icon. It automatically changes appearance base
 When clicking the button, the native [Cast Dialog](https://developers.google.com/cast/docs/design_checklist/cast-dialog) is presented which enables the user to connect to a Chromecast, and, when casting, to play/pause and change volume.
 
 ```js
-import { CastButton } from 'react-native-google-cast'
+import { CastButton } from 'react-native-gcast'
 
 // ...
   render() {
@@ -27,7 +27,7 @@ Instead of using the `CastButton` component and the default Cast dialog, you may
 First, you need to retrieve a list of nearby Cast devices using [DiscoveryManager](../api/classes/discoverymanager) or the `useDevices` hook. You may then use [startSession](../api/classes/sessionmanager#startsession) to connect to a device, and [endCurrentSession](../api/classes/sessionmanager#endcurrentsession) to stop casting.
 
 ```js
-import GoogleCast, { useDevices } from 'react-native-google-cast'
+import GoogleCast, { useDevices } from 'react-native-gcast'
 
 function MyComponent() {
   const castDevice = useCastDevice()

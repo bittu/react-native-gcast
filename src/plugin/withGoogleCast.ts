@@ -75,4 +75,4 @@ const withGoogleCast: ConfigPlugin<
   return config
 }
 
-export default createRunOncePlugin(withGoogleCast, 'react-native-google-cast')
+export default createRunOncePlugin(withGoogleCast, 'react-native-gcast')

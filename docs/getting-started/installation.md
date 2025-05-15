@@ -4,16 +4,16 @@ title: Installation
 sidebar_label: Installation
 ---
 
-`$ npm install react-native-google-cast --save`
+`$ npm install react-native-gcast --save`
 
 or
 
-`$ yarn add react-native-google-cast`
+`$ yarn add react-native-gcast`
 
 ## Expo
 
 Since Expo SDK 42, you can use this library in a custom-built Expo app.
-There is a config plugin included to auto-configure `react-native-google-cast` when the native code is generated (`npx expo prebuild`).
+There is a config plugin included to auto-configure `react-native-gcast` when the native code is generated (`npx expo prebuild`).
 
 > This package cannot be used in the "Expo Go" app because [it requires custom native code](https://docs.expo.io/workflow/customizing/).
 
@@ -23,7 +23,7 @@ Add the [config plugin](https://docs.expo.io/guides/config-plugins/) to the [`pl
 {
   "expo": {
     "plugins": [
-      "react-native-google-cast",
+      "react-native-gcast",
       ["expo-build-properties", { "ios": { "deploymentTarget": "14.0" } }]
     ]
   }

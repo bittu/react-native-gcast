@@ -6,7 +6,7 @@ import {
   Text,
   View,
 } from 'react-native'
-import { MediaInfo, useRemoteMediaClient } from 'react-native-google-cast'
+import { MediaInfo, useRemoteMediaClient } from 'react-native-gcast'
 
 interface FormatItem {
   title: string

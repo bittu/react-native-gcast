@@ -2,7 +2,7 @@ import React from 'react'
 import { Image, Text, View } from 'react-native'
 import DraggableFlatList from 'react-native-draggable-flatlist'
 import { TouchableOpacity } from 'react-native-gesture-handler'
-import { MediaQueueItem, useRemoteMediaClient } from 'react-native-google-cast'
+import { MediaQueueItem, useRemoteMediaClient } from 'react-native-gcast'
 import { NavigationComponentProps } from 'react-native-navigation'
 
 export interface QueueScreenProps extends NavigationComponentProps {}

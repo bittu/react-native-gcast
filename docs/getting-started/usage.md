@@ -8,7 +8,7 @@ First, render Cast button which handles session and enables users to connect to 
 
 ```ts
 import React from 'react'
-import { CastButton, useRemoteMediaClient } from 'react-native-google-cast'
+import { CastButton, useRemoteMediaClient } from 'react-native-gcast'
 
 function MyComponent() {
   // This will automatically rerender when client is connected to a device

@@ -5,7 +5,7 @@ import {
   useMediaStatus,
   useRemoteMediaClient,
   useStreamPosition,
-} from 'react-native-google-cast'
+} from 'react-native-gcast'
 
 export default function Client() {
   const client = useRemoteMediaClient()

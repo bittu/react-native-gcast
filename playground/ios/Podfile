@@ -25,8 +25,8 @@ target 'RNGCPlayground' do
 
   # Note that the example is in a relative location to the library's root directory.
   # In your project you'll need to set the path to node_modules instead:
-  # pod 'react-native-google-cast', path: '../node_modules/react-native-google-cast/'
-  pod 'react-native-google-cast', path: '../../'
+  # pod 'react-native-gcast', path: '../node_modules/react-native-gcast/'
+  pod 'react-native-gcast', path: '../../'
 
   target 'RNGCPlaygroundTests' do
     inherit! :complete

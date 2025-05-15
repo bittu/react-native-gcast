@@ -11,7 +11,7 @@ If you're using functional components, the library provides a number of hooks th
 Receive the current [CastState](../api/enums/caststate).
 
 ```js
-import { useCastState } from 'react-native-google-cast'
+import { useCastState } from 'react-native-gcast'
 
 function MyComponent() {
   const castState = useCastState()
@@ -25,7 +25,7 @@ function MyComponent() {
 Receive a list of available [Device](../api/interfaces/device)s.
 
 ```js
-import GoogleCast, { useDevices } from 'react-native-google-cast'
+import GoogleCast, { useDevices } from 'react-native-gcast'
 
 function MyComponent() {
   const devices = useDevices()
@@ -48,7 +48,7 @@ function MyComponent() {
 Receive the current [CastSession](../api/classes/castsession).
 
 ```js
-import { useCastSession } from 'react-native-google-cast'
+import { useCastSession } from 'react-native-gcast'
 
 function MyComponent() {
   const castSession = useCastSession()
@@ -65,7 +65,7 @@ function MyComponent() {
 Create and use a [CastChannel](../api/classes/castchannel).
 
 ```js
-import { useCastChannel } from 'react-native-google-cast'
+import { useCastChannel } from 'react-native-gcast'
 
 function MyComponent() {
   const channel = useCastChannel('urn:x-cast:com.example.custom')
@@ -82,7 +82,7 @@ function MyComponent() {
 Receive the current [RemoteMediaClient](../api/classes/remotemediaclient).
 
 ```js
-import { useRemoteMediaClient } from 'react-native-google-cast'
+import { useRemoteMediaClient } from 'react-native-gcast'
 
 function MyComponent() {
   const client = useRemoteMediaClient()
@@ -99,7 +99,7 @@ function MyComponent() {
 Receive the current [MediaStatus](../api/interfaces/mediastatus).
 
 ```js
-import { useMediaStatus } from 'react-native-google-cast'
+import { useMediaStatus } from 'react-native-gcast'
 
 function MyComponent() {
   const mediaStatus = useMediaStatus()
@@ -116,7 +116,7 @@ Note that the media status is only updated when the status of the stream changes
 If you need to know the current progress in near real-time\*, see `useStreamPosition` instead:
 
 ```js
-import { useStreamPosition } from 'react-native-google-cast'
+import { useStreamPosition } from 'react-native-gcast'
 
 function MyComponent() {
   const streamPosition = useStreamPosition()

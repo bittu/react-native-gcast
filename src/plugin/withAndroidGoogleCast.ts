@@ -100,7 +100,7 @@ const withProjectBuildGradleVersion: ConfigPlugin<{ version?: string }> = (
   return withProjectBuildGradle(config, (config_) => {
     if (config_.modResults.language !== 'groovy')
       throw new Error(
-        'react-native-google-cast config plugin does not support Kotlin /build.gradle yet.'
+        'react-native-gcast config plugin does not support Kotlin /build.gradle yet.'
       )
     config_.modResults.contents = addGoogleCastVersionImport(
       config_.modResults.contents,
@@ -120,7 +120,7 @@ const withAppBuildGradleImport: ConfigPlugin<{ version?: string }> = (
   return withAppBuildGradle(config, (config_) => {
     if (config_.modResults.language !== 'groovy')
       throw new Error(
-        'react-native-google-cast config plugin does not support Kotlin app/build.gradle yet.'
+        'react-native-gcast config plugin does not support Kotlin app/build.gradle yet.'
       )
     config_.modResults.contents = addSafeExtGet(config_.modResults.contents)
 
@@ -191,7 +191,7 @@ function addGoogleCastLazyLoadingImport(
   const mainActivity = MAIN_ACTIVITY_LANGUAGES[language]
   if (!mainActivity) {
     throw new Error(
-      `react-native-google-cast config plugin does not support MainActivity.${language} yet`
+      `react-native-gcast config plugin does not support MainActivity.${language} yet`
     )
   }
 
@@ -199,7 +199,7 @@ function addGoogleCastLazyLoadingImport(
   newSrc.push(`    ${mainActivity.code}`)
 
   return mergeContents({
-    tag: 'react-native-google-cast-onCreate',
+    tag: 'react-native-gcast-onCreate',
     src,
     newSrc: newSrc.join('\n'),
     anchor: mainActivity.anchor,
@@ -221,7 +221,7 @@ function addGoogleCastImport(
   )
 
   return mergeContents({
-    tag: 'react-native-google-cast-dependencies',
+    tag: 'react-native-gcast-dependencies',
     src,
     newSrc: newSrc.join('\n'),
     anchor: /dependencies(?:\s+)?\{/,
@@ -266,7 +266,7 @@ function addGoogleCastVersionImport(
   newSrc.push(`        castFrameworkVersion = "${version}"`)
 
   return mergeContents({
-    tag: 'react-native-google-cast-version',
+    tag: 'react-native-gcast-version',
     src,
     newSrc: newSrc.join('\n'),
     anchor: /ext(?:\s+)?\{/,

@@ -3,7 +3,7 @@ import { Button, ScrollView, Text, View } from 'react-native'
 import CastContext, {
   useCastChannel,
   useCastSession,
-} from 'react-native-google-cast'
+} from 'react-native-gcast'
 
 export default function Session() {
   const [lastMessage, setLastMessage] = useState<{}>()

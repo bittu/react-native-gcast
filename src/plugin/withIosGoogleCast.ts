@@ -46,7 +46,7 @@ const withIosAppDelegateLoaded: ConfigPlugin<IosProps> = (config, props) => {
   return withAppDelegate(config, (config_) => {
     if (!['objc', 'objcpp'].includes(config_.modResults.language)) {
       throw new Error(
-        "react-native-google-cast config plugin does not support AppDelegates that aren't Objective-C(++) yet."
+        "react-native-gcast config plugin does not support AppDelegates that aren't Objective-C(++) yet."
       )
     }
     config_.modResults.contents =
@@ -133,7 +133,7 @@ export function addGoogleCastAppDelegateDidFinishLaunchingWithOptions(
   newSrc = newSrc.filter(Boolean)
 
   return mergeContents({
-    tag: 'react-native-google-cast-didFinishLaunchingWithOptions',
+    tag: 'react-native-gcast-didFinishLaunchingWithOptions',
     src,
     newSrc: newSrc.join('\n'),
     anchor: MATCH_INIT,
@@ -151,7 +151,7 @@ function addGoogleCastAppDelegateImport(src: string) {
   )
 
   return mergeContents({
-    tag: 'react-native-google-cast-import',
+    tag: 'react-native-gcast-import',
     src,
     newSrc: newSrc.join('\n'),
     anchor: /#import "AppDelegate\.h"/,

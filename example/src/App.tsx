@@ -1,6 +1,6 @@
 import React from 'react'
 import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
-import { CastButton } from 'react-native-google-cast'
+import { CastButton } from 'react-native-gcast'
 import { Navigation } from 'react-native-navigation'
 import HomeScreen from './screens/HomeScreen'
 import QueueScreen from './screens/QueueScreen'

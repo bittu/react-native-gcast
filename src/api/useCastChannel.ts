@@ -10,7 +10,7 @@ import useCastSession, { UseCastSessionOptions } from './useCastSession'
  * @returns custom channel, or `null` if there's no session connected
  * @example
  * ```js
- * import { useCastChannel } from 'react-native-google-cast'
+ * import { useCastChannel } from 'react-native-gcast'
  *
  * function MyComponent() {
  *   const castChannel = useCastChannel(

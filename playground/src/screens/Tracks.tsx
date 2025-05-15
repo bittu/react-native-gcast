@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, ScrollView, Text } from 'react-native'
-import { useMediaStatus, useRemoteMediaClient } from 'react-native-google-cast'
+import { useMediaStatus, useRemoteMediaClient } from 'react-native-gcast'
 
 export default function Session() {
   const client = useRemoteMediaClient()

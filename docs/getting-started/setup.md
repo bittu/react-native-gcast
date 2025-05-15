@@ -24,7 +24,7 @@ The plugin provides props for extra customization. Every time you change the pro
   "expo": {
     "plugins": [
       [
-        "react-native-google-cast",
+        "react-native-gcast",
         {
           "receiverAppId": "...",
           "iosStartDiscoveryAfterFirstTapOnCastButton": false
